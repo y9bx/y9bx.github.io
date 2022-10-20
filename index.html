@@ -1,0 +1,11 @@
+---
+layout: default
+---
+
+<style>
+#t a {text-decoration: underline}
+</style>
+
+    {% for post in site.posts limit:30 %}
+      <a href='{{ post.url | prepend: site.baseurl | prepend: site.url }}'><div id="t">{{ post.title | xml_escape }}</div></a>
+    {% endfor %}

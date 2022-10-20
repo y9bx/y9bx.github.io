@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>뉴스</title>
+  <link rel="alternate" type="application/rss+xml" title="코드뉴스" href="/rss">
+  <link rel="shortcut icon" href="/favicon.ico">
+</head>
+
+<style>
+* {color:#000;text-decoration:none}
+
+html {background-attachment:fixed;background-size:cover;background-position:center;background-repeat:no-repeat}
+body {box-shadow: 0px 14px 42px 0px rgb(163 174 184 / 15%);min-height:100vh;width:85%;margin:0 auto;background:#fff;padding:0 25px;box-sizing:border-box}
+img {width:100%}
+#t {box-shadow: 0px 14px 42px 0px rgb(163 174 184 / 15%);background:#fff;padding:25px;box-sizing:border-box;border-radius:15px;margin:30px 0;list-style:none}
+#button {float:left;padding:0;position:relative;outline:0;;height:12px;background:#fff;border:0;top:35px;left:25px;overflow:hidden;z-index:998;cursor:pointer}
+#box {position:absolute;left:0;width:100%;background:#fff}
+#wid, #widd {max-width:85%;margin:0 auto}
+#wid a {margin:0 5px;font-weight:lighter}
+#article {min-height:70vh}
+.realssp_dv , .mobile {display:none}
+.pc {display:block}
+@media (max-width:1024px) {
+body {width:100%}
+.mobile {display:block}
+.pc {display:none}
+}
+
+::-webkit-scrollbar{width:10px}::-webkit-scrollbar-thumb{background:#ccc}::-webkit-scrollbar-track{background:#eee}
+</style>
+
+<div style='position:absolute;left:0;width:100%;background:#fff'>
+
+<div style='line-height:85px;font-weight:bold;font-size:35px;border-bottom:1px solid #F0F0F0'>
+<div id='widd'><a href='/'>뉴스</a></div>
+</div>
+
+<div style='line-height:65px;border-bottom:1px solid #F0F0F0'>
+<div id='wid'><a href='/'>검색</a> <a href='/num/-'>업종</a> <a href='/num/0'>경제</a> <a href='/num1/0'>세계</a></div>
+</div>
+
+</div>
+
+<div style='height:165px'></div>
+
+  <body>
+    <div class="page-content" id="article">
+      <div class="wrapper">
+
+<div id='t'>
+	<form style='padding:0;margin:0' action="/search" method="get">
+		<input type="text" placeholder="주식 코드를 입력해주세요 📋" name="q" style="outline:none;width:100%;height:20px;border:0;box-sizing:border-box" required size="50" maxlength="255">
+	</form>
+</div>
+
+<div id='t'>
+	<form style='padding:0;margin:0' action="/s2" method="get">
+		<input type="text" placeholder="빠르게 웹페이지를 검색해보세요 🧐" name="q" style="outline:none;width:100%;height:20px;border:0;box-sizing:border-box" required size="50" maxlength="255">
+	</form>
+</div>
+
+
+<style>
+#t a {text-decoration: underline}
+</style>
+
+<div id="t"><b>금융</b> 💸<br><a href='/search?q=323410'>카카오뱅크</a> <a href='/search?q=377300'>카카오페이</a> <a href='/search?q=001510'>SK증권</a></div>
+
+<div id="t"><b>하드웨어</b> 💻<br><a href='/search?q=aapl'>애플</a> <a href='/search?q=amd'>AMD</a> <a href='/search?q=nvda'>엔비디아</a> <a href='/search?q=005930'>삼성전자</a> <a href='/search?q=066570'>LG전자</a> </div>
+
+<div id="t"><b>소프트웨어</b> 👨🏻‍💻<br><a href='/search?q=aapl'>애플</a> <a href='/search?q=msft'>마이크로소프트</a> <a href='/search?q=amzn'>아마존</a> <a href='/search?q=twtr'>트위터</a> <a href='/search?q=meta'>메타</a> <a href='/search?q=035420'>네이버</a> <a href='/search?q=035720'>카카오</a></div>
+
+
+      </div>
+    </div>
+  </body>
+
+<div style='height:15px'></div>
+<div id='box' style='border-top:1px solid #F0F0F0'>
+<div id='wid' style='line-height:65px'>
+	<a href='/site_total'>사이트맵</a>
+</div>
+</div>
+
+</body>
+</html>

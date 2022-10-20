@@ -1,0 +1,45 @@
+---
+layout: default
+---
+
+<style>
+span a {font-size:13px}
+iframe {margin:0 !important}
+</style>
+
+</span>
+
+<div id='t'>
+	<form style='padding:0;margin:0' action="/search" method="get">
+		<input type="text" placeholder="주식 코드를 입력해주세요" name="q" style="outline:none;width:100%;height:20px;border:0;box-sizing:border-box" required size="50" maxlength="255">
+	</form>
+</div>
+
+<style>
+#b {position:relative;bottom:30px;left:20px;color:#fff;font-size:15px}
+@media (max-width:1024px) {
+}
+
+.embed-footer, ng-include, .fe_title {display:none !important}
+
+</style>
+
+<script>
+	function getParameterByName(name) {
+    name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+        results = regex.exec(location.search);
+    return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+}
+var uid = getParameterByName('q').toUpperCase();
+
+</script>
+
+<div id='t'>
+<script>
+document.write("\
+<iframe width=\"100%\" height=\"350\" src=\"https://s.tradingview.com/widgetembed/?frameElementId=tradingview_373ee&symbol="+uid+"&interval=5&symboledit=1&saveimage=1&toolbarbg=f1f3f6&studies=%5B%5D&theme=light&style=1&timezone=Etc%2FUTC&studies_overrides=%7B%7D&overrides=%7B%7D&enabled_features=%5B%5D&disabled_features=%5B%5D&locale=kr&utm_source=https://0wi.kr&utm_medium=widget&utm_campaign=chart&utm_term=AAPL\" frameborder=\"0\"></iframe>");
+</script>
+</div>
+
+</div>

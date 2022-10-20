@@ -1,0 +1,47 @@
+---
+layout: null
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+	<sitemap>
+		<loc>{{ site.url }}{{ site.baseurl }}/sitemap-a.xml</loc>
+	</sitemap>
+
+	<sitemap>
+		<loc>{{ site.url }}{{ site.baseurl }}/sitemap-b.xml</loc>
+	</sitemap>
+
+	<sitemap>
+		<loc>{{ site.url }}{{ site.baseurl }}/sitemap-c.xml</loc>
+	</sitemap>
+
+	<sitemap>
+		<loc>{{ site.url }}{{ site.baseurl }}/sitemap-d.xml</loc>
+	</sitemap>
+
+	<sitemap>
+		<loc>{{ site.url }}{{ site.baseurl }}/sitemap-e.xml</loc>
+	</sitemap>
+
+	<sitemap>
+		<loc>{{ site.url }}{{ site.baseurl }}/sitemap-f.xml</loc>
+	</sitemap>
+
+	<sitemap>
+		<loc>{{ site.url }}{{ site.baseurl }}/sitemap-g.xml</loc>
+	</sitemap>
+
+	<sitemap>
+		<loc>{{ site.url }}{{ site.baseurl }}/sitemap-h.xml</loc>
+	</sitemap>
+
+	<sitemap>
+		<loc>{{ site.url }}{{ site.baseurl }}/sitemap-i.xml</loc>
+	</sitemap>
+
+	<sitemap>
+		<loc>{{ site.url }}{{ site.baseurl }}/sitemap-j.xml</loc>
+	</sitemap>
+
+</sitemapindex>

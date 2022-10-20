@@ -1,0 +1,52 @@
+---
+layout: default
+---
+
+<style>
+#e12 {display:none}
+.gsc-above-wrapper-area {display:none}
+.cse .gsc-control-cse, .gsc-control-cse {padding:0}
+.gs-webResult.gs-result a.gs-title:link, .gs-webResult.gs-result a.gs-title:link b, .gs-imageResult a.gs-title:link, .gs-imageResult a.gs-title:link b {color:#3a81ff}
+.gs-webResult .gs-snippet, .gs-imageResult .gs-snippet, .gs-fileFormatType {font-size:10px;color:#555}
+.gs-webResult div.gs-visibleUrl, .gs-imageResult div.gs-visibleUrl {font-size:10px;color:green}
+.gsc-webResult .gsc-result {padding:0}
+.gs-image-box.gs-web-image-box.gs-web-image-box-portrait {width:100px}
+.gs-image-box.gs-web-image-box.gs-web-image-box-landscape {width:100px}
+.gs-web-image-box-portrait img.gs-image {min-width:100px;position:relative;top:-50%}
+.gs-web-image-box-landscape img.gs-image {min-width:100px;min-height:55px}
+.gs-result img.gs-image, .gs-result img.gs-promotion-image {border:0}
+.gsc-results .gsc-cursor-box {text-align:center}
+.gsc-results .gsc-cursor-box .gsc-cursor-current-page {padding:3px 6px}
+h1 {display:none}
+</style>
+
+<script>
+  (function() {
+    var cx = '005250040578232720626:s9msn9p8y_a';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = false;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+
+<script>
+	function getParameterByName(name) {
+    name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+        results = regex.exec(location.search);
+    return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+}
+var uid = getParameterByName('q').toUpperCase();
+
+</script>
+
+<div id='t'>
+	<form style='padding:0;margin:0' action="/s2" method="get">
+		<input type="text" placeholder="빠르게 웹페이지를 검색해보세요" name="q" style="outline:none;width:100%;height:20px;border:0;box-sizing:border-box" required size="50" maxlength="255">
+	</form>
+</div>
+
+<gcse:searchresults-only></gcse:searchresults-only>

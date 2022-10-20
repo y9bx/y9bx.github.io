@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Sitemap: /sitemap_total
+
+#DaumWebMasterTool:96020122d8f64113e2e00012d5adaf8e24c532b000a72a393eaa499653fc6893:vkAC/JeFSDoJZ53mYnKQDg==
