@@ -6,14 +6,14 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: INUNEWS
+title: BXNEWS
 email: 
-author: "INUNEWS"
+author: "BXNEWS"
 logo: "./1.png"
 lang: "en"
-description: "INUNEWS"
+description: "BXNEWS"
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://0q2v.github.io" # the base hostname & protocol for your site
+url: "https://y9bx.github.io" # the base hostname & protocol for your site
 timezone: America/Toronto
 encoding: UTF-8
 
